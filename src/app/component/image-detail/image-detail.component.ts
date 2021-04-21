@@ -25,7 +25,6 @@ export class ImageDetailComponent implements OnInit {
   cargarImagenDetallada(id:string) {
     this.cardService.getCardInfoById(id).subscribe((response) => {
       this.response = response;
-      console.log(response)
     });
   }
 }
