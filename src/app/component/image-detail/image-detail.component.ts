@@ -8,7 +8,6 @@ import { CardService } from '../../service/card.service';
   styleUrls: ['./image-detail.component.scss'],
 })
 export class ImageDetailComponent implements OnInit {
-  public id: any;
   public response: any;
   constructor(
     private route: ActivatedRoute,
