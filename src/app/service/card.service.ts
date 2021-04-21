@@ -22,4 +22,18 @@ export class CardService {
 
 }
 
+getCardInfoById(id:any){
+  const httpParams = new HttpParams({
+    fromObject:{
+      key: '13119377-fc7e10c6305a7de49da6ecb25',
+      id
+    }
+  })
+
+  return this.http.get(this.rootURL,{params:httpParams})
+}
+
+getUrl(url:string){
+  return this.http.get(url)
+}
 }
