@@ -6,8 +6,8 @@
       <th>Views</th>
       <th>Tags</th>
     </tr>
-    <tr *ngFor="let hit of cardInfo.hits" [routerLink]="['/', 'image',hit.id]">
-      <td scope="row"><img  src="{{ hit.largeImageURL }}" width="52px" height="52px" /></td>
+    <tr *ngFor="let hit of cardInfo.hits"  [routerLink]="['/', 'image',hit.id]">
+      <td scope="row"><img  src="{{ hit.largeImageURL }}" width="100px" height="100px" class="img-fluid img-thumbnail"></td>
       <td scope="row">{{ hit.likes }}</td>
       <td scope="row">{{ hit.views }}</td>
       <td scope="row">{{ hit.tags }}</td>

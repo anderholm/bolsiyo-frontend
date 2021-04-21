@@ -9,6 +9,7 @@ import { ImageDetailComponent } from './component/image-detail/image-detail.comp
 import { HomeComponent } from './component/home/home.component';
 import { BuscadorComponent } from './component/buscador/buscador.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BuscarPipe } from './pipes/buscar.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ImageDetailComponent,
     HomeComponent,
     BuscadorComponent,
+    BuscarPipe,
   ],
   imports: [
     BrowserModule,
