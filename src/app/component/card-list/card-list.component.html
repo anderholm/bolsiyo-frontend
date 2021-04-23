@@ -1,19 +1,28 @@
 
-<div class="container safe">
-  
-  <div  *ngFor="let hit of cardInfo.hits"   class="container ">
-    <div class="row"> 
-      <div >
-          <img  src="{{ hit.largeImageURL }}" [routerLink]="['/', 'image',hit.id]" class="img-fluid img-thumbnail m-0 p-0 col-sm-12 col-md-6 col-lg-3">
-      </div>
-          </div>
-           <div class="row">
-            <div >
-              <div>{{ hit.likes }}</div>
-              <div>{{ hit.views }}</div>
-              <div>{{ hit.tags }}</div>
+<div class="container-fluid background2">
+<div class="container ">
+ <div class="row"> 
+  <div  *ngFor="let hit of cardInfo.hits" [routerLink]="['/', 'image',hit.id]"  class="background col-sm-12 col-md-6 col-lg-3 m-0 p-0 py-5 float ">
+    <div class="flex-row" >
+          <div>
+           
+            <img  src="{{ hit.largeImageURL }}"  class="img-recorte m-0 p-0">
+      
+            <div class="flex-row">
+              
+              <div class="m-1 justify-text-center">{{ hit.likes }}</div>
+              <div class="m-1 justify-text-center">{{ hit.views }}</div>
+              
+              <div class="flex-row">
+              
+                <div class="m-1 justify-text-center">{{ hit.tags }}</div>
+              
+              </div>
+             
             </div>
           </div>
+          </div>
     </div>
-
+  </div>
+</div>
 </div>

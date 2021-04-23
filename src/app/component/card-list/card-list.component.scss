@@ -1,12 +1,40 @@
-.safe{
-    height: 90vh;
-    overflow-y: scroll;
+.safe {
+  height: 90vh;
+  overflow-y: scroll;
 }
-.background{
-    background-color: aquamarine;
-    
+.background {
+  background-color: rgb(88, 88, 88);
+}
+.background2 {
+  background-color: rgb(45, 45, 46);
 }
 
-tr{
-    border: 1px solid red;
+.img-recorte {
+    clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 0,
+    100% 70%,
+    70% 100%,
+    0 99%,
+    0% 70%,
+    0% 30%
+  );
+  width: 250px;
+  height: 250px;
+  padding: auto;
+}
+.img-recorte:hover {
+    clip-path: inset(0 0 0 0);
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  display: flexbox;
+}
+@media (max-width: 768px) {
+  .background,.img-recorte {
+    justify-content: center;
+    display: flex;
+   
+  }
 }
